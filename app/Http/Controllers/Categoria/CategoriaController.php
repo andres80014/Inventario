@@ -23,7 +23,7 @@ class CategoriaController extends Controller
 
         $textBuscar   = $request->textBuscar;
         $opcionBuscar = $request->opcionBuscar;
-
+        //buscar por opcion y texto
         if($textBuscar==''){
             
             $categorias = Categoria::orderBy('id','desc')->get();
